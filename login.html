@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maverick Website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <section id="header">
+    <a href="#"><img src="img/maverick-logo01.png" class="logo" alt></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Conact</a></li>
+            <li><a class="active" href="login.html">Sign Up</a></li>
+            <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+            <a href="#" id="close"><i class="fas fa-times"></i>
+            </i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+    </section>
+
+    <section>
+        <div class="container" id="signUp">
+            <h1 class="form-title">Register</h1>
+            <form method="post" action="register_handler.php">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="fName" id="fName" placeholder="First Name" required>
+                    <label for="fName">First Name</label>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="lName" id="lName" placeholder="Last Name" required>
+                    <label for="lName">Last Name</label>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" id="signup-email" placeholder="Email" required>
+                    <label for="signup-email">Email</label>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="signup-password" placeholder="Password" required>
+                    <label for="signup-password">Password</label>
+                </div>
+                <input type="submit" class="btn" value="Sign Up" name="signUp">
+                
+                <p class="or"></p> 
+    
+                <div class="Link">
+                    <p>Already Have Account?</p>
+                    <button type="button" id="signInButton">Sign In</button>
+                </div>
+            </form>
+        </div>
+    
+        <div class="container" id="sigIn" style="display: none;">
+            <h1 class="form-title">Sign In</h1>
+            <form method="post" action="login_handler.php">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" id="signin-email" placeholder="Email" required>
+                    <label for="signin-email">Email</label>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="signin-password" placeholder="Password" required>
+                    <label for="signin-password">Password</label>
+                </div>
+                <p class="recover">
+                    <a href="#">Recover Password</a>
+                </p>
+                <input type="submit" class="btn" value="Sign In" name="signIn">    
+    
+                <p class="or"></p>
+    
+                <div class="Link">
+                    <p>Don't have an account yet?</p>
+                    <button type="button" id="signUpButton">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/maverick-logo01.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Wickrama Home, Abewickrama Road, Kongala, Hakmana, Matara</p>
+            <p><strong>Phone:</strong> +94 767 388 921</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Praivacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Intall App</h4>
+            <P>From App Store or Google Play</P>
+            <div class="row">
+                <img src="img/App_Store.png" alt="">
+                <img src="img/google-play.webp" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/paymentop.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <P>© 2024 MAVERICK. All rights reserved. Unauthorized use of content is prohibited.</P>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

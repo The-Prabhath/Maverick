@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Maverick Website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/maverick-logo01.png" class="logo" alt="Maverick Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Sign Up</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+    <section id="page-header" class="cart-header">
+        <h2>Your Shopping Cart</h2>
+        <p>Review your items and proceed to checkout</p>
+    </section>
+
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/product01.jpg" alt="Product Image 1">
+                            <div>Varsity Patch Regular Fit Bomber Jacket</p>
+                                <small>Price: $109.00</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$109.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$20.00</td>
+                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/product07.jpg" alt="Product Image 2">
+                            <div>
+                                <p>Travis Scott Oversized T Shirt</p>
+                                <small>Price: $49.00</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$49.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$15.00</td>
+                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Cart Summary -->
+        <div class="cart-total">
+            <h3>Cart Summary</h3>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$158.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$163.00</td>
+                </tr>
+            </table>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/maverick-logo01.png" alt="Maverick Logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Wickrama Home, Abewickrama Road, Kongala, Hakmana, Matara</p>
+            <p><strong>Phone:</strong> +94 767 388 921</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/App_Store.png" alt="App Store">
+                <img src="img/google-play.webp" alt="Google Play">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/paymentop.png" alt="Payment Options">
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 MAVERICK. All rights reserved. Unauthorized use of content is prohibited.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
